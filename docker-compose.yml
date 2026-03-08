@@ -5,5 +5,5 @@ services:
     environment:
       - PLAYLISTS=https://open.spotify.com/playlist/id1,https://open.spotify.com/playlist/id2
     volumes:
-      - /your/music/path:/music
+      - /tmp/music:/music
     restart: unless-stopped
