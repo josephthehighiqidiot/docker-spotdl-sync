@@ -2,7 +2,11 @@ services:
   spotdl-sync:
     build: .
     container_name: spotdl-sync
+    volumes:
+      - /tmp/music:/music
     environment:
       - PLAYLISTS=https://open.spotify.com/playlist/5Ez8elMwhbdzviNPalVkOE?si=bb799f7541574847
-      - /tmp/music:/music
+      # optional, recommended for better performance especially first time.
+      - SPOTIFY_CLIENT_ID=your_client_id
+      - SPOTIFY_CLIENT_SECRET=your_client_secret
     restart: unless-stopped
