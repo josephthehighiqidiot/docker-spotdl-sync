@@ -3,7 +3,6 @@ services:
     build: .
     container_name: spotdl-sync
     environment:
-      - PLAYLISTS=https://open.spotify.com/playlist/5Ez8elMwhbdzviNPalVkOE?si=bb799f7541574847,https://open.spotify.com/playlist/id2
-    volumes:
+      - PLAYLISTS=https://open.spotify.com/playlist/5Ez8elMwhbdzviNPalVkOE?si=bb799f7541574847
       - /tmp/music:/music
     restart: unless-stopped
