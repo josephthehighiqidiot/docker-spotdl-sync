@@ -5,7 +5,7 @@ services:
     volumes:
       - /tmp/music:/music
     environment:
-      - PLAYLISTS=https://open.spotify.com/playlist/5Ez8elMwhbdzviNPalVkOE?si=bb799f7541574847
+      - PLAYLISTS=https://open.spotify.com/playlist/5Ez8elMwhbdzviNPalVkOE?si=bb799f7541574847,https://open.spotify.com/playlist/7Lg38dS7n9e9TLzJ7XWHTH?si=1797d533544b449b
       # optional, recommended for better performance especially first time.
       - SPOTIFY_CLIENT_ID=your_client_id
       - SPOTIFY_CLIENT_SECRET=your_client_secret
